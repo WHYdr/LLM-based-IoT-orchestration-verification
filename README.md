@@ -29,15 +29,12 @@ A comprehensive IoT device configuration validation framework that automatically
    ollama create zephyr:7b-beta -f zephyr_configurator
    ```
 
-3. **Start IoT Verification & Request Service**
+3. **Start IoT Verification Service**
    ```bash
    # Start the verification service backend
    # (Navigate to verify/ directory and start the service)
    cd ...verify #the right path
-   python IoT_Verifier.py  # or the appropriate service file
-
-   cd ..
-   python IoT_Request.py
+   python IoT_Verifier.py  
    ```
 
 ### Basic Usage
