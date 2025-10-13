@@ -80,49 +80,9 @@ This will generate:
 - `type_accuracy.png` - Type accuracy chart
 - `verification_accuracy.png` - Verification accuracy chart
 
-## 📊 Project Structure
-
-```
-IoT-Configuration-Validation-Framework/
-├── enhanced_paper_data_collector.py    # Enhanced performance data collection script
-├── IoT_Request.py                      # IoT verification service client
-├── configurator.txt                    # Configuration generation prompts
-├── translator.txt                      # Type classification prompts
-├── zephyr_configurator                 # Ollama model configuration
-├── enhanced_test_results_*.json         # Test results JSON files
-├── enhanced_test_report_*.csv          # Test report CSV files
-├── verify/                             # IoT verification service
-│   └── (verification service files)    # Backend verification logic
-└── Graphs/                             # Visualization tools
-    ├── generate_performance_charts.py  # Performance chart generator
-    ├── time_consumption.png          # Time consumption chart
-    ├── type_accuracy.png              # Type accuracy chart
-    └── verification_accuracy.png       # Verification accuracy chart
-```
 
 ## 🔧 Configuration
 
-### Model Configuration
-The framework uses Zephyr-7B-Beta by default. To modify model settings, edit `zephyr_configurator`:
-
-```
-FROM zephyr:7b-beta
-PARAMETER temperature 0
-TEMPLATE """{{- if .System }}
-<|system|>
-{{ .System }}
-</s>
-{{- end }}
-<|user|>
-{{ .Prompt }}
-</s>
-<|assistant|>
-"""
-PARAMETER stop "<|system|>"
-PARAMETER stop "<|user|>"
-PARAMETER stop "<|assistant|>"
-PARAMETER stop "</s>"
-```
 
 ### Prompt Files Configuration
 
