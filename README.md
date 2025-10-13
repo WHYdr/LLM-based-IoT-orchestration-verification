@@ -13,40 +13,6 @@ A comprehensive IoT device configuration validation framework that automatically
 - **Visualization Analysis**: Automatically generate performance charts and statistical reports
 - **Multi-Type Validation**: Support for sensor devices, actuator devices, gateways, communication protocols, and security configurations
 
-## 📋 Prerequisites
-
-- Python 3.7+
-- Ollama (for local model execution)
-- Git
-
-## 🛠️ Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd LLM-IoT-Configuration-Framework
-   ```
-
-2. **Install Python dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Set up Ollama**
-   ```bash
-   # Install Ollama (if not already installed)
-   # Download Zephyr-7B-Beta model
-   ollama pull zephyr:7b-beta
-   
-   # Create custom model with configuration
-   ollama create zephyr:7b-beta -f zephyr_configurator
-   ```
-
-4. **Start Ollama service**
-   ```bash
-   ollama serve
-   ```
-
 ## 🏃‍♂️ Quick Start
 
 ### Prerequisites Setup
