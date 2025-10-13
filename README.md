@@ -77,8 +77,7 @@ python generate_performance_charts.py
 
 This will generate:
 - `time_consumption.png` - Time consumption analysis chart
-- `type_accuracy.png` - Type accuracy chart
-- `verification_accuracy.png` - Verification accuracy chart
+- `combined_accuracy.png` - Verification accuracy & Type accuracy chart
 
 
 ## 🔧 Configuration
@@ -222,7 +221,6 @@ python generate_performance_charts.py --csv enhanced_test_report_20251013_090406
 - ✅ Comprehensive performance evaluation framework
 - ✅ Automatic visualization analysis
 - ✅ Local model support
-- ✅ Detailed test reports
 
 ---
 
