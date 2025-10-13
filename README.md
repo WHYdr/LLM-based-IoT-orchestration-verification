@@ -183,126 +183,8 @@ The framework includes comprehensive test cases covering 5 verification types:
 - Configuration conflict detection
 - Security vulnerability detection
 
-## 📝 Usage Examples
 
-### Generate MQTT Configuration
-```python
-from IoT_Request import send_verification_request
 
-# Generate MQTT client configuration
-result = send_verification_request(
-    verification_type="CP",
-    config_commands=["mqtt_client_config"]
-)
-print(result)
-```
-
-### Check IoT Topology Status
-```python
-from IoT_Request import request_status
-
-# Get current IoT topology status
-status = request_status()
-print(status)
-```
-
-### Run Performance Tests
-```python
-from enhanced_paper_data_collector import EnhancedPaperDataCollector
-
-# Create data collector
-collector = EnhancedPaperDataCollector()
-
-# Run enhanced tests
-collector.run_enhanced_tests()
-```
-
-### Complete Workflow Example
-```python
-from IoT_Request import send_verification_request, request_status
-
-# 1. Check service status
-status = request_status()
-print("Service Status:", status)
-
-# 2. Generate sensor device configuration
-sensor_result = send_verification_request(
-    verification_type="SD",
-    config_commands=["temperature_sensor_config"]
-)
-print("Sensor Config:", sensor_result)
-
-# 3. Generate actuator device configuration  
-actuator_result = send_verification_request(
-    verification_type="AD", 
-    config_commands=["smart_light_config"]
-)
-print("Actuator Config:", actuator_result)
-```
-
-### Generate Visualization Charts
-```python
-from Graphs.generate_performance_charts import PerformanceChartGenerator
-
-# Create chart generator
-generator = PerformanceChartGenerator("enhanced_test_report_20251013_090406.csv")
-
-# Generate all charts
-generator.generate_all_charts()
-```
-
-### Sensor Device Configuration Example
-```python
-# Temperature sensor configuration
-sensor_config = {
-    "device_id": "temp_001",
-    "sensor_type": "temperature", 
-    "sampling_rate": 1,
-    "data_format": "JSON"
-}
-```
-
-### Actuator Device Configuration Example
-```python
-# Smart light actuator configuration
-actuator_config = {
-    "device_id": "light_001",
-    "actuator_type": "smart_light",
-    "control_interface": "brightness",
-    "safety_features": "overcurrent_protection"
-}
-```
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-1. **Connection Failed**
-   - Ensure Ollama service is running: `ollama serve`
-   - Check IoT verifier service: `python IoT_Request.py`
-
-2. **Model Not Found**
-   - Pull the model: `ollama pull zephyr:7b-beta`
-   - Verify model exists: `ollama list`
-
-3. **Timeout Errors**
-   - Check network connectivity
-   - Increase timeout values in configuration
-
-### Health Checks
-```bash
-# Check Ollama status
-ollama list
-
-# Check if custom model exists
-ollama list | grep zephyr
-
-# Check IoT verifier service
-curl http://127.0.0.1:5000/health
-
-# Test IoT verification service
-python IoT_Request.py
-```
 
 ## 📊 Results Analysis and Visualization
 
@@ -321,11 +203,6 @@ The framework provides powerful visualization analysis capabilities:
 - **Type Accuracy Chart**: Comparison of recognition accuracy across verification types
 - **Verification Accuracy Chart**: Analysis of configuration verification success rates
 
-#### Chart Types
-1. **Bar Charts**: Performance comparison across types
-2. **Line Charts**: Time trends and performance changes
-3. **Pie Charts**: Success/failure ratio distribution
-4. **Heat Maps**: Performance heat maps for different configuration types
 
 #### Using Visualization Features
 ```bash
@@ -337,17 +214,6 @@ python generate_performance_charts.py
 python generate_performance_charts.py --csv enhanced_test_report_20251013_090406.csv
 ```
 
-## 🤝 Contributing
-
-1. Fork this repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new features
-5. Submit a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 📚 References
 
@@ -355,12 +221,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Ollama Documentation](https://ollama.ai/docs)
 - [IoT Configuration Management Best Practices](https://docs.iot.org/)
 
-## 🆘 Technical Support
-
-For questions or support:
-- Check test files for usage examples
-- Review generated log files for troubleshooting
-- Submit Issues to report bugs or feature requests
 
 ## 🎯 Project Highlights
 
@@ -373,4 +233,3 @@ For questions or support:
 
 ---
 
-**Start your IoT configuration management journey!** 🚀
