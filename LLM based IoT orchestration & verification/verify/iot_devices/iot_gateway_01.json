@@ -1,0 +1,60 @@
+{
+  "device_info": {
+    "device_id": "iot_gateway_01",
+    "device_type": "gateway",
+    "manufacturer": "Raspberry Pi",
+    "model": "Pi 4B",
+    "firmware_version": "2.1.0",
+    "capabilities": ["data_aggregation", "protocol_translation", "edge_computing", "device_management"],
+    "communication_protocols": ["wifi", "ethernet", "mqtt", "http", "coap"],
+    "data_format": "json",
+    "processing_power": "4_cores_1.5GHz",
+    "memory": "4GB",
+    "storage": "32GB"
+  },
+  "network_config": {
+    "wifi0": {
+      "name": "wifi0",
+      "mode": "access_point",
+      "ssid": "IoT_Network",
+      "ip_address": "192.168.1.1/24",
+      "channel": 6,
+      "security": "WPA2"
+    },
+    "wifi1": {
+      "name": "wifi1",
+      "mode": "access_point",
+      "ssid": "IoT_Network",
+      "ip_address": "192.168.1.1/24",
+      "channel": 6,
+      "security": "WPA2"
+    },
+    "ethernet0": {
+      "name": "ethernet0",
+      "ip_address": "10.0.0.10/24",
+      "gateway": "10.0.0.1",
+      "dns": "8.8.8.8"
+    }
+  },
+  "mqtt_config": {
+    "broker": "10.0.0.100",
+    "port": 1883,
+    "client_id": "gateway_01",
+    "username": "gateway_user",
+    "password": "gateway_pass",
+    "keepalive": 60
+  },
+  "device_management": {
+    "max_connected_devices": 50,
+    "device_discovery": "enabled",
+    "firmware_update": "enabled",
+    "remote_configuration": "enabled"
+  }
+}
+
+
+
+
+
+
+
