@@ -149,33 +149,26 @@ The framework includes comprehensive test cases covering 5 verification types:
 - Temperature sensor configurations
 - Humidity sensor configurations
 - Motion sensor configurations
-- Pressure sensor configurations
-- Light sensor configurations
 
 ### Actuator Device (AD) Tests
 - Smart light actuators
 - Motor actuators
 - Valve actuators
-- Relay actuators
-- Pump actuators
 
 ### Gateway Device (GW) Tests
 - IoT gateway configurations
-- Protocol translation gateways
-- Device management gateways
-- Data aggregation gateways
-
+- Eadge gateway with management
+  
 ### Communication Protocol (CP) Tests
-- MQTT protocol configurations
-- HTTP protocol configurations
-- TCP/UDP protocol configurations
-- CoAP protocol configurations
+- Standard MQTT Client Configuration 
+- TLS Encrypted MQTT Configuration 
+- TCP Server Configuration 
+- UDP Client Configuration
 
 ### Security Configuration (SC) Tests
-- TLS/SSL encryption configurations
-- Authentication configurations
-- Access control configurations
-- Data encryption configurations
+- Authentication and Encryption 
+- Certificate-based Security 
+- JWT and OAuth Security 
 
 ### Error Handling Tests
 - Invalid protocol handling
