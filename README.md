@@ -2,7 +2,7 @@
 
 A comprehensive IoT device configuration validation framework that automatically generates, translates, and validates IoT device configurations. The framework supports 5 main verification types and provides comprehensive performance evaluation and visualization analysis capabilities.
 
-## 🚀 Key Features
+## Key Features
 
 - **Automated Configuration Generation**: Generate IoT device configurations from natural language requirements
 - **Multi-Protocol Support**: Support for MQTT, TCP, UDP, HTTP and other IoT protocols
@@ -13,7 +13,7 @@ A comprehensive IoT device configuration validation framework that automatically
 - **Visualization Analysis**: Automatically generate performance charts and statistical reports
 - **Multi-Type Validation**: Support for sensor devices, actuator devices, gateways, communication protocols, and security configurations
 
-## 🏃‍♂️ Quick Start
+## Quick Start
 
 ### Prerequisites Setup
 
@@ -80,7 +80,7 @@ This will generate:
 - `combined_accuracy.png` - Verification accuracy & Type accuracy chart
 
 
-## 🔧 Configuration
+## Configuration
 
 
 ### Prompt Files Configuration
@@ -117,7 +117,7 @@ The framework uses custom validation rules for different IoT device types:
 - **Communication Protocols**: Validates protocol-specific parameters and settings
 - **Security Configurations**: Validates authentication and encryption methods
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 The framework tracks the following key performance metrics:
 
@@ -140,7 +140,7 @@ The framework tracks the following key performance metrics:
 4. **CP (Communication Protocol)**: Communication protocol configurations
 5. **SC (Security Configuration)**: Security configurations
 
-## 🧪 Test Cases
+## Test Cases
 
 The framework includes comprehensive test cases covering 5 verification types:
 
@@ -178,7 +178,7 @@ The framework includes comprehensive test cases covering 5 verification types:
 
 
 
-## 📊 Results Analysis and Visualization
+## Results Analysis and Visualization
 
 The framework generates detailed performance reports including:
 
@@ -207,20 +207,20 @@ python generate_performance_charts.py --csv enhanced_test_report_20251013_090406
 ```
 
 
-## 📚 References
+## References
 
 - [Zephyr-7B-Beta Model](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
 - [Ollama Documentation](https://ollama.ai/docs)
 - [IoT Configuration Management Best Practices](https://docs.iot.org/)
 
 
-## 🎯 Project Highlights
+## Project Highlights
 
-- ✅ Support for 5 IoT device verification types
-- ✅ Automated configuration generation and validation
-- ✅ Comprehensive performance evaluation framework
-- ✅ Automatic visualization analysis
-- ✅ Local model support
+- Support for 5 IoT device verification types
+- Automated configuration generation and validation
+- Comprehensive performance evaluation framework
+- Automatic visualization analysis
+- Local model support
 
 ---
 
