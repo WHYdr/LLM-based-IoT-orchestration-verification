@@ -33,7 +33,7 @@ A comprehensive IoT device configuration validation framework that automatically
    ```bash
    # Start the verification service backend
    # (Navigate to verify/ directory and start the service)
-   cd ...verify #the right path
+   cd ...verify # the right path
    python IoT_Verifier.py  
    ```
 
