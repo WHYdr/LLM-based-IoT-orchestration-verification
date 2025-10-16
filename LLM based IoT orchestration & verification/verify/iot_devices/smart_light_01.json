@@ -1,0 +1,48 @@
+{
+  "device_info": {
+    "device_id": "smart_light_01",
+    "device_type": "actuator",
+    "actuator_type": "light",
+    "manufacturer": "Philips",
+    "model": "Hue White",
+    "firmware_version": "1.93.11",
+    "capabilities": ["on_off", "brightness_control", "scheduling", "remote_control"],
+    "communication_protocols": ["wifi", "mqtt", "http"],
+    "data_format": "json",
+    "power_consumption": "9W",
+    "brightness_range": "0-100%",
+    "color_temperature": "2700K-6500K"
+  },
+  "network_config": {
+    "wifi0": {
+      "name": "wifi0",
+      "ssid": "IoT_Network",
+      "ip_address": "192.168.1.104/24",
+      "gateway": "192.168.1.1",
+      "dns": "8.8.8.8"
+    }
+  },
+  "mqtt_config": {
+    "broker": "192.168.1.1",
+    "port": 1883,
+    "topic": "actuators/light/01",
+    "qos": 1,
+    "retain": true,
+    "username": "actuator_user",
+    "password": "actuator_pass"
+  },
+  "actuator_config": {
+    "default_state": "off",
+    "brightness_step": 1,
+    "fade_duration": 400,
+    "power_on_behavior": "restore_last_state",
+    "safety_features": ["overheat_protection", "power_limit"]
+  }
+}
+
+
+
+
+
+
+
